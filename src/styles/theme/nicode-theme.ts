@@ -1,7 +1,7 @@
 const nicodeTheme = {
-  breakpoints: [0, 321, 768],
+  breakpoints: ['350px', '400px', '550px', '37.5em', '700px', '1099px', '1270px'],
   colors: {
-    dom: {
+    custom: {
       blue: '#3271fa',
       blueDom: '#1c3f89',
       lightGray: '#e0e0e0',
@@ -468,13 +468,13 @@ export const darkTheme = {
   breakpoints: [...nicodeTheme.breakpoints],
   colors: {
     ...nicodeTheme.colors,
-    primary: nicodeTheme.colors.dom.blue,
-    primaryVariant: nicodeTheme.colors.dom.blueDom,
+    primary: nicodeTheme.colors.custom.blue,
+    primaryVariant: nicodeTheme.colors.custom.blueDom,
     background: '#121212',
     secondary: '#85aafa50',
     shadow: '#292524',
     tertiary: '#3f3f46',
-    text: nicodeTheme.colors.dom.white,
+    text: nicodeTheme.colors.custom.white,
     tError: nicodeTheme.colors.error[600],
     translucent: '#29252499',
     tSuccess: nicodeTheme.colors.success[400],
@@ -494,11 +494,11 @@ export const lightTheme = {
   colors: {
     ...nicodeTheme.colors,
     primary: '#3271fa',
-    primaryVariant: nicodeTheme.colors.dom.blueDom,
-    background: nicodeTheme.colors.dom.white,
+    primaryVariant: nicodeTheme.colors.custom.blueDom,
+    background: nicodeTheme.colors.custom.white,
     secondary: '#85aafa50',
     shadow: '#93c5fd',
-    tertiary: nicodeTheme.colors.dom.lightGray,
+    tertiary: nicodeTheme.colors.custom.lightGray,
     text: '#121212',
     tError: nicodeTheme.colors.error[700],
     translucent: '#f9f9f970',
